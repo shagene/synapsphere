@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { useTheme } from "next-themes"
 import { Sun, Moon, LogOut, Plus, Search, Book, BarChart2, Settings, ChevronRight, Award } from "lucide-react"
 import { useQuizzes } from '@/hooks/useQuizzes'
+import { FloatingNav } from './floating-nav'
 
 export default function Dashboard() {
   const { theme, setTheme } = useTheme()
@@ -16,7 +17,7 @@ export default function Dashboard() {
     <div className="min-h-screen bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text">
       <div className="flex h-screen overflow-hidden">
         {/* Sidebar */}
-        <aside className="hidden md:flex md:flex-shrink-0">
+        {/* <aside className="hidden md:flex md:flex-shrink-0">
           <div className="flex flex-col w-64">
             <div className="flex flex-col h-0 flex-1 bg-navy-blue dark:bg-dark-bg">
               <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
@@ -57,8 +58,8 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-        </aside>
-
+        </aside> */}
+        <FloatingNav />
         {/* Main content */}
         <div className="flex flex-col w-0 flex-1 overflow-hidden">
           <div className="md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3">
