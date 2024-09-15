@@ -15,14 +15,14 @@ export function LandingPage() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
-    // Add login logic here
+    localStorage.setItem('authToken', 'dummyToken');
     console.log('Login submitted')
     router.push('/dashboard')
   }
 
   const handleSignup = (e: React.FormEvent) => {
     e.preventDefault()
-    // Add signup logic here
+    localStorage.setItem('authToken', 'dummyToken');
     console.log('Signup submitted')
     router.push('/dashboard')
   }

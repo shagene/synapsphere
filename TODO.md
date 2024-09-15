@@ -17,10 +17,12 @@
 - [x] Create "Request More Info" form (UI only, needs backend integration)
 
 ### User Authentication
+- [x] Implement basic authentication flow (using localStorage for development)
+- [x] Create useAuth hook for managing authentication state
 - [ ] Implement secure signup process with Supabase
 - [ ] Implement login process with Supabase
 - [ ] Set up password reset functionality
-- [ ] Create anonymous sessions for guest users
+- [x] Create basic structure for guest users
 
 ### Dashboard
 - [x] Create dashboard layout
@@ -34,6 +36,16 @@
 - [x] Implement quiz loading using TanStack Query (with mock data)
 - [ ] Add immediate feedback on correct/incorrect matches
 
+### App Structure and Routing
+- [x] Set up app/layout.tsx as root layout with shared elements
+- [x] Create nested layouts for authenticated and guest sections
+- [x] Implement individual route components for different pages (dashboard, quizzes, etc.)
+- [x] Create a client component for the React Query provider
+- [x] Wrap root layout with React Query provider
+- [x] Implement basic middleware for authentication checks
+- [x] Set up conditional rendering based on user status (guest vs. authenticated)
+- [ ] Implement lazy loading and code splitting for different sections of the app
+
 ## Phase 2: Core Feature Implementation
 
 ### Quiz Creation and Management
@@ -42,6 +54,7 @@
 - [ ] Add option to set time limits for quizzes
 
 ### Tiered Access Model
+- [x] Implement basic structure for guest users
 - [ ] Implement quiz limit for guest users
 - [ ] Create unlimited access for registered users
 - [ ] Set up advanced progress tracking for registered users
@@ -62,7 +75,7 @@
 - [ ] Implement persistent progress tracking
 
 ### Performance Optimization
-- [ ] Utilize TanStack Query's caching capabilities
+- [x] Set up initial structure for TanStack Query's caching capabilities
 - [ ] Implement lazy loading and code splitting
 - [ ] Optimize for mobile responsiveness
 
